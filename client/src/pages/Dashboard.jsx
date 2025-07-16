@@ -37,6 +37,12 @@ function Dashboard() {
         >
           + Start new Meeting
         </button>
+        <button
+          onClick={() => navigate(`/summary/sample-room-id`)}
+          className="text-blue-600 underline text-sm mt-2"
+        >
+          🔍 View Summary
+        </button>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
         <div className="p-4 bg-white rounded shadow">
@@ -49,7 +55,7 @@ function Dashboard() {
           <h3 className="text-lg font-semibold">Team Sync-up</h3>
           <p className="text-sm text-gray-500">Date: 2025-07-12</p>
           <button
-            onClick={() => navigate("/summary/abc123")}
+            onClick={() => navigate("/summary/:roomId")}
             className="mt-2 text-blue-600 text-sm underline"
           >
             View Summary

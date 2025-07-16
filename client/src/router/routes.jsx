@@ -26,7 +26,7 @@ const router = createBrowserRouter([
   },
   { path: "/signup", element: <Signup /> },
   {
-    path: "/summary/:id",
+    path: "/summary/:roomId",
     element: (
       <ProtectedRoute>
         <Summary />
